@@ -165,7 +165,7 @@ const AboutPage = () => {
     {
       icon: Code,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: isLoading ? "Loading..." : totalProjects,  // Prevent showing zero before data loads,
+      value: totalProjects,  // Prevent showing zero before data loads,
       label: "Total Projects",
       description: "Innovative solutions crafted",
       animation: "fade-right",
@@ -174,7 +174,7 @@ const AboutPage = () => {
     {
       icon: Globe,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: isLoading ? "Loading..." : YearExperience,
+      value: YearExperience,
       label: "Years of Experience",
       description: "Continuous learning journey",
       animation: "fade-left",
