@@ -113,6 +113,10 @@ const StatCard = memo(({ icon: Icon, color, value, label, description, animation
 ));
 
 const AboutPage = () => {
+
+  // Added a loading state
+  const [isLoading, setIsLoading] = React.useState(true);
+
   // Memoized calculations
   const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
@@ -122,6 +126,8 @@ const AboutPage = () => {
     const today = new Date();
     const experience = today.getFullYear() - startDate.getFullYear() -
       (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
+
+    setIsLoading(false);  // Set loading to false once the data is processed
 
     return {
       totalProjects: storedProjects.length,
@@ -159,7 +165,7 @@ const AboutPage = () => {
     {
       icon: Code,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: totalProjects,
+      value: isLoading ? "Loading..." : totalProjects,  // Prevent showing zero before data loads,
       label: "Total Projects",
       description: "Innovative solutions crafted",
       animation: "fade-right",
@@ -168,7 +174,7 @@ const AboutPage = () => {
     {
       icon: Globe,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: YearExperience,
+      value: isLoading ? "Loading..." : YearExperience,
       label: "Years of Experience",
       description: "Continuous learning journey",
       animation: "fade-left",
