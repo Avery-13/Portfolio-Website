@@ -1,105 +1,31 @@
-# Portofolio V5
-Halo semuanya!
-Perkenalkan, saya Eki Zulfar Rachman, dan pada kesempatan kali ini, saya ingin berbagi proyek website portofolio yang telah saya kembangkan.
+Portfolio Website - Avery Ebeling
+Hello everyone!
+I’m Avery Ebeling, a 4th-year Computer Science student at Carleton University specializing in game design and software development. This is my personal portfolio website where I showcase my technical projects, including full-stack web development, database design, and game development.
 
-Tech Stack yang digunakan:
-- ReactJS
-- Tailwind CSS
-- AOS
-- Firebase
-- Framer Motion
-- Lucide
-- Material UI
-- SweetAlert2
+Tech Stack Used:
+ReactJS - Front-end framework for building interactive UI components.
+Tailwind CSS - Utility-first CSS for rapid UI styling.
+AOS (Animate on Scroll) - For smooth scroll animations.
+Firebase - Database and authentication services for comments and project storage.
+Framer Motion - For advanced animations and micro-interactions.
+Lucide Icons - Modern SVG icons for visual elements.
+Material UI - UI component library for enhanced design consistency.
+SweetAlert2 - For beautiful and customizable alert popups.
+Website Link: https://portfolio-website-iatf-48zylr4yt-avery-13s-projects.vercel.app/
 
-Link Website:
-https://www.eki.my.id/
+How to Run This Project Locally
+Follow the steps below to clone and run this portfolio website on your local machine.
 
-We would appreciate it if you would like to use this project, please include our credit in your use. Thank You! 🙏
+Prerequisites:
+Ensure you have the following installed:
 
-# Tutorial Menjalankan Project
+Node.js
+npm (comes with Node.js)
 
-Berikut ini adalah panduan sederhana untuk menjalankan project ini.
+git clone https://github.com/Avery-13/Portfolio-Website.git
 
-## Persiapan
+cd Portfolio-Website
 
-Pastikan Anda sudah menginstal:
+npm install --legacy-peer-deps
 
-- **Node.js** 
-
-## Langkah-Langkah Menjalankan Project
-
-1. **Download project ini:**
-
-   ```bash
-   git clone https://github.com/EkiZR/Portofolio_V5.git
-   ```
-
-2. **Install semua kebutuhan:**
-
-   ```bash
-   npm install
-   ```
-   atau dengan cara
-   
-    ```bash
-   npm install --legacy-peer-deps
-   ```
-
-4. **Jalankan project:**
-   
-   ```bash
-   npm run dev
-   ```
-
-6. **Buka di browser:**
-
-   Akses aplikasi di browser Anda melalui link yang muncul di terminal.
-
-## Membuat Versi Siap Produksi
-
-Untuk membuat versi siap produksi (production build):
-
-1. Jalankan perintah build:
-
-   ```bash
-   npm run build
-   ```
-
-2. File hasil build akan tersimpan di folder `dist`. Anda dapat mengunggah folder ini ke server hosting Anda.
-
-## Catatan
-
-Jika ada masalah saat menjalankan project, pastikan:
-
-- Node.js sudah terinstal dengan benar.
-- Anda berada di folder project yang benar.
-- Semua kebutuhan terinstal tanpa error.
-
-## Konfigurasi Firebase
-
-Untuk melakukan konfigurasi Firebase dalam project ini, ikuti langkah berikut:
-
-1. **Tambahkan Firebase ke Project:**
-   - Buka [Firebase Console](https://console.firebase.google.com/).
-   - Buat project baru atau gunakan project yang sudah ada.
-
-2. **Pilih Firestore Database**
-   - Create Database
-
-3. **Pergi Ke Project Setting**
-    - Klik pada bagian : ![Screenshot 2024-12-30 214204](https://github.com/user-attachments/assets/43243cad-b414-4dd9-8793-d15c401c82fe)
-    - Nanti copy isi firebas confignya ![image](https://github.com/user-attachments/assets/6d0e158c-1ae0-40c1-8b41-9e53a1c4ccbb)
-
-4. **Pergi Ke Rules**
-   - Ubah rulesnya jadi true
-
-5. **Buka file firebase.js dan firebase-comment.js** 
-   - Ganti isi firebaseConfig dengan config firebase anda
-
-
-
-    
-      
-
-
+npm run dev
